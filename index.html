@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Simulador UERJ</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="logo-screen">
+
+<img src="logo.png" class="logo">
+
+</section>
+
+<section id="intro" class="hidden">
+
+<h1>Simulador de Pontuação</h1>
+
+<p>
+Este simulador estima quantos pontos você teria em uma prova
+de 90 questões e mostra em quais cursos sua pontuação poderia
+ser suficiente.
+</p>
+
+<button onclick="goName()">Continuar</button>
+
+</section>
+
+<section id="name" class="hidden">
+
+<h1>Antes de começar</h1>
+
+<input id="studentName" placeholder="Digite seu nome">
+
+<button onclick="startQuiz()">Começar</button>
+
+</section>
+
+<section id="quiz" class="hidden">
+
+<div class="quiz-header">
+
+<h1>Simulado</h1>
+
+<div class="progress">
+<div id="progress-bar"></div>
+</div>
+
+</div>
+
+<div id="questions"></div>
+
+<button onclick="finish()">Finalizar</button>
+
+</section>
+
+<section id="result" class="hidden">
+
+<h1 id="resultTitle"></h1>
+
+<p id="score"></p>
+
+<div id="courses"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
